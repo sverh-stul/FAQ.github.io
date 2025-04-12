@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>ЧЗВ</title>
+</head>
+<body>
+	<header>
+		<h1>ЧастоЗадаваемыеВпросы</h1>
+	</header>
+	<main>
+		<section class="faq-container">
+			<div class="faq-item">
+				<div class="question">"- если есть Малые Тетерки, то есть ли Большие Тетерки?"</div>
+				<div class="answer">"-эти знания утеренны поколения назад."</div>
+			</div>
+
+			<div class="faq-item">
+				<div class="question">"-есть ли бог?"</div>
+				<div class="answer">"-да хз вообще."</div>
+			</div>
+
+			<div class="faq-item">
+				<div class="question">"-ваше мнение о политической обстановке?"</div>
+				<div class="answer">"-Крым наш."</div>
+			</div>
+
+			<div class="faq-item">
+				<div class="question">"-как приготовить кенгуру?"</div>
+				<div class="answer">"-Очистите лук, мелко нарежьте и пассируйте его несколько минут. Муку также пассируйте до золотистого цвета. Далее в муку добавьте бульон. Поставьте на огонь и кипятите 10 минут. Затем процедите. Лук протрите через сито и положите в бульон с мукой. Добавьте туда же сметану и кипятите еще 15 минут."
+			</div>
+
+			
+			
+
+			<div class="faq-item">
+				<div class="question">"-продайте сайт"</div>
+				<div class="answer">"-..."</div>
+			</div>
+
+		</section>
+	</main>
+
+	<footer>
+		<p>Razrab:"..."</p>
+	</footer>
+
+	<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const faqItems = document.querySelectorAll('.faq-item');
+
+      faqItems.forEach(item => {
+        item.querySelector('.question').addEventListener('click', () => {
+          item.classList.toggle('open');
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
